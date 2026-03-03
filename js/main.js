@@ -1,7 +1,7 @@
 /**
  * ISISRICO - Script principal
  * Funcionalidades: contadores animados, scroll suave, navbar sticky,
- * validación de formulario, animaciones al scroll, CTAs de donación.
+ * animaciones al scroll, CTAs de donación.
  * Estructura modular pensada para futura migración a React.
  */
 
@@ -145,7 +145,6 @@
         e.preventDefault();
         const amount = selectedAmount || (customInput && parseInt(customInput.value, 10)) || null;
         if (amount && amount > 0) {
-          // En producción aquí irías a pasarela de pago
           alert('Gracias por tu generosidad. Redirigiendo a la pasarela de pago... (simulación). Monto: $' + amount);
         } else {
           alert('Por favor selecciona un monto o escribe otro en el campo "Otro".');
@@ -155,74 +154,14 @@
   }
 
   /* ========== VALIDACIÓN DEL FORMULARIO DE CONTACTO ========== */
+  // Se ha desactivado la validación manual por JS para permitir que Netlify Forms 
+  // procese el envío de forma nativa. Las validaciones básicas se manejan con 
+  // los atributos 'required' en el HTML.
   function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
-
-    const nameInput = form.querySelector('#contactName');
-    const emailInput = form.querySelector('#contactEmail');
-    const messageInput = form.querySelector('#contactMessage');
-
-    function showError(input, message) {
-      input.classList.add('is-invalid');
-      const feedback = input.nextElementSibling;
-      if (feedback && feedback.classList.contains('invalid-feedback')) {
-        feedback.textContent = message;
-      }
-    }
-
-    function clearError(input) {
-      input.classList.remove('is-invalid');
-    }
-
-    function validateEmail(email) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      let isValid = true;
-      [nameInput, emailInput, messageInput].forEach((i) => clearError(i));
-
-      if (!nameInput.value.trim()) {
-        showError(nameInput, 'Por favor escribe tu nombre.');
-        isValid = false;
-      }
-
-      if (!emailInput.value.trim()) {
-        showError(emailInput, 'Por favor escribe tu email.');
-        isValid = false;
-      } else if (!validateEmail(emailInput.value.trim())) {
-        showError(emailInput, 'Por favor escribe un email válido (ej: nombre@dominio.com).');
-        isValid = false;
-      }
-
-      if (!messageInput.value.trim()) {
-        showError(messageInput, 'Por favor escribe tu mensaje.');
-        isValid = false;
-      } else if (messageInput.value.trim().length < 10) {
-        showError(messageInput, 'El mensaje debe tener al menos 10 caracteres.');
-        isValid = false;
-      }
-
-      if (isValid) {
-        // Simulación de envío; en producción: fetch a tu backend
-        alert('¡Mensaje enviado! Te responderemos pronto.');
-        form.reset();
-      }
-    });
-
-    [nameInput, emailInput, messageInput].forEach((input) => {
-      input.addEventListener('input', function () {
-        clearError(this);
-      });
-      input.addEventListener('blur', function () {
-        if (this.classList.contains('is-invalid') && this.value.trim()) {
-          clearError(this);
-        }
-      });
-    });
+    
+    // El envío se maneja ahora directamente por el navegador hacia Netlify.
   }
 
   /* ========== AÑO ACTUAL EN FOOTER ========== */
@@ -238,7 +177,7 @@
     initCounters();
     initScrollAnimations();
     initDonationAmounts();
-    initContactForm();
+    // initContactForm(); // Comentado para no interrumpir el envío a Netlify
     setCurrentYear();
   }
 

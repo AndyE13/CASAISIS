@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ISISRICO - Organización sin fines de lucro. Tu donación transforma vidas. Apoya nuestra misión de ayudar a quienes más lo necesitan.">
+  <meta name="keywords" content="ISISRICO, donaciones, organización sin fines de lucro, ayuda social, solidaridad, voluntariado, proyectos sociales">
+  <meta name="author" content="ISISRICO">
+  <title>ISISRICO | Donar transforma vidas - Organización sin fines de lucro</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">ISISRICO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#donar">Donar</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-cta-nav btn-sm" href="#donar">Donar Ahora</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section id="hero" class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="container text-center">
+      <h1 class="hero-title">Cada donación cuenta.<br>Juntos transformamos vidas.</h1>
+      <p class="hero-subtitle">Tu generosidad hace posible una segunda oportunidad.</p>
+      <a href="#donar" class="btn btn-hero-primary btn-lg me-2">Donar Ahora</a>
+      <a href="#sobre-nosotros" class="btn btn-hero-secondary btn-lg">Conoce Nuestra Misión</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SOBRE NOSOTROS ========== -->
+<section id="sobre-nosotros" class="section-py bg-light">
+  <div class="container">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <p>ISISRICO nació del deseo de construir un mundo más justo y solidario.</p>
+  </div>
+</section>
+
+<!-- ========== IMPACTO ========== -->
+<section id="impacto" class="section-py impact-section">
+  <div class="container text-center text-white">
+    <h2 class="section-title">Nuestro Impacto</h2>
+  </div>
+</section>
+
+<!-- ========== PROGRAMAS ========== -->
+<section id="programas" class="section-py bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Programas y Proyectos</h2>
+  </div>
+</section>
+
+<!-- ========== TESTIMONIOS ========== -->
+<section id="testimonios" class="section-py">
+  <div class="container text-center">
+    <h2 class="section-title">Testimonios</h2>
+  </div>
+</section>
+
+<!-- ========== DONAR ========== -->
+<section id="donar" class="section-py cta-donate-section">
+  <div class="container text-center text-white">
+    <h2 class="section-title">Tu donación cambia vidas</h2>
+    <a href="#" class="btn btn-cta-large btn-lg">Donar Ahora</a>
+  </div>
+</section>
+
+<!-- ========== FORMULARIO DE CONTACTO (NETLIFY) ========== -->
+<section id="contacto" class="section-py">
+  <div class="container">
+    <h2 class="section-title text-center mb-2">Contáctanos</h2>
+    <p class="text-center text-muted mb-4">
+      ¿Quieres ser voluntario, aliado o tienes alguna pregunta? Escríbenos.
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <form
+          name="contacto-isisrico"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="contact-form bg-light p-4 rounded-3 shadow-sm"
+        >
+
+          <input type="hidden" name="form-name" value="contacto-isisrico">
+          <p class="d-none">
+            <label>No llenar si eres humano: <input name="bot-field"></label>
+          </p>
+
+          <div class="mb-3">
+            <label class="form-label">Nombre *</label>
+            <input type="text" class="form-control" name="nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email *</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">¿Cómo deseas participar? *</label>
+            <select class="form-select" name="tipo_participacion" required>
+              <option value="">Selecciona una opción</option>
+              <option value="Voluntario">Voluntario</option>
+              <option value="Aliado">Aliado</option>
+              <option value="Donante">Donante</option>
+              <option value="Información general">Información general</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Mensaje *</label>
+            <textarea class="form-control" name="mensaje" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            Enviar mensaje
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container text-center text-white py-4">
+    <p class="small mb-0">© <span id="currentYear"></span> ISISRICO. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

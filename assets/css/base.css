@@ -1,23 +1,27 @@
 :root {
-  --color-primary: #6f2dbd;
-  --color-primary-dark: #4b1d82;
-  --color-secondary: #f4b400;
-  --color-accent: #00a6a6;
-  --color-surface: #fdf9ff;
-  --color-ink: #1f1b2d;
-  --color-muted: #6a6577;
-  --shadow-soft: 0 12px 30px rgba(31, 27, 45, 0.12);
+  --color-primary: #7a3e65;
+  --color-primary-dark: #5b2d4a;
+  --color-secondary: #e9a15b;
+  --color-accent: #6e8b8a;
+  --color-surface: #fff7f3;
+  --color-surface-soft: #fffdfb;
+  --color-ink: #2e2530;
+  --color-muted: #5f5562;
+  --color-border: #eaded7;
+  --shadow-soft: 0 12px 30px rgba(46, 37, 48, 0.12);
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   color: var(--color-ink);
-  background: #fff;
-  line-height: 1.7;
+  background: var(--color-surface-soft);
+  line-height: 1.75;
 }
 
 h1,
@@ -26,13 +30,26 @@ h3,
 h4,
 h5 {
   font-family: 'Poppins', 'Inter', sans-serif;
-  line-height: 1.2;
+  line-height: 1.25;
   font-weight: 700;
   color: var(--color-ink);
 }
 
-.section-space { padding: 5rem 0; }
-.section-soft { background: var(--color-surface); }
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+}
+
+.section-space {
+  padding: 5rem 0;
+}
+
+.section-soft {
+  background: var(--color-surface);
+}
 
 .kicker {
   color: var(--color-accent);
@@ -42,7 +59,10 @@ h5 {
   font-size: 0.82rem;
 }
 
-.lead { color: var(--color-muted); }
+.lead {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
 
 .btn-brand {
   background: var(--color-primary);

@@ -1,0 +1,28 @@
+.metric {
+  text-align: center;
+  padding: 1.4rem;
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.metric strong {
+  display: block;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--color-primary);
+}
+
+.program-item {
+  border-top: 3px solid var(--color-accent);
+}
+
+.form-card {
+  border: 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.page-header {
+  padding-top: 7.5rem;
+  padding-bottom: 2rem;
+}

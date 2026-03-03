@@ -3,298 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ISISRICO | Transformamos vidas con educación y comunidad</title>
-    <meta
-      name="description"
-      content="Fundación ISISRICO: programas educativos, acompañamiento comunitario y oportunidades para transformar vidas."
-    />
-
+    <title>Casa Isis | Hogar de oportunidades</title>
+    <meta name="description" content="Casa Isis fortalece comunidades con programas de educación, bienestar y redes de apoyo." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/pages.css" />
   </head>
-
-  <body>
-    <header>
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Navegación principal">
-        <div class="container">
-          <a class="navbar-brand fw-bold" href="#inicio">ISISRICO</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNav"
-            aria-controls="mainNav"
-            aria-expanded="false"
-            aria-label="Mostrar menú"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
-              <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-              <li class="nav-item ms-lg-2"><a class="nav-link btn-cta-nav" href="#donar">Donar</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
+  <body data-page="index.html">
+    <header id="site-navbar"></header>
     <main>
-      <section id="inicio" class="hero-section">
-        <div class="hero-overlay" aria-hidden="true"></div>
-        <div class="hero-content">
-          <div class="container text-center">
-            <h1 class="hero-title animate-on-scroll">Construimos oportunidades para niñas, niños y familias</h1>
-            <p class="hero-subtitle text-white-80 animate-on-scroll">
-              En ISISRICO acompañamos procesos educativos y comunitarios para generar bienestar sostenible.
-            </p>
-            <div class="hero-buttons d-flex justify-content-center gap-3 flex-wrap animate-on-scroll">
-              <a href="#programas" class="btn btn-hero-primary">Conoce nuestros programas</a>
-              <a href="#donar" class="btn btn-hero-secondary">Quiero donar</a>
-            </div>
+      <section class="container page-header">
+        <div class="hero-panel text-center">
+          <p class="kicker text-warning">Transformación con dignidad</p>
+          <h1 class="display-5 mb-3">Un lugar donde cada historia importa y cada familia encuentra apoyo.</h1>
+          <p class="lead mb-4">Casa Isis conecta educación, cuidado y oportunidades para construir comunidades seguras y esperanzadoras.</p>
+          <div class="d-flex gap-2 justify-content-center flex-wrap">
+            <a class="btn btn-brand btn-lg" href="programas.html">Ver programas</a>
+            <a class="btn btn-outline-light btn-lg" href="voluntariado.html">Quiero ser voluntario/a</a>
           </div>
         </div>
       </section>
 
-      <section id="nosotros" class="section-py bg-light">
+      <section class="section-space section-soft">
         <div class="container">
           <div class="row g-4">
-            <div class="col-lg-6 animate-on-scroll">
-              <h2 class="section-title mb-3">Nuestra misión</h2>
-              <p>
-                Promover el desarrollo integral de comunidades vulnerables a través de educación, salud emocional
-                y alianzas sociales.
-              </p>
-              <p class="mb-0">
-                Este contenido está preparado como base editable para migrarlo posteriormente a componentes React.
-              </p>
-            </div>
-            <div class="col-lg-6">
-              <div class="row g-3">
-                <div class="col-sm-6 animate-on-scroll">
-                  <article class="card card-value h-100 border-0 shadow-sm p-3">
-                    <div class="value-icon bg-primary text-white rounded-circle mb-3">❤️</div>
-                    <h3 class="h5">Empatía</h3>
-                    <p class="mb-0">Escuchamos y acompañamos procesos reales de cada comunidad.</p>
-                  </article>
-                </div>
-                <div class="col-sm-6 animate-on-scroll">
-                  <article class="card card-value h-100 border-0 shadow-sm p-3">
-                    <div class="value-icon bg-success text-white rounded-circle mb-3">🌱</div>
-                    <h3 class="h5">Sostenibilidad</h3>
-                    <p class="mb-0">Diseñamos proyectos con visión a largo plazo.</p>
-                  </article>
-                </div>
-              </div>
-            </div>
+            <div class="col-md-4"><div class="metric"><strong>480+</strong><span>niñas, niños y jóvenes acompañados</span></div></div>
+            <div class="col-md-4"><div class="metric"><strong>65</strong><span>familias activas en procesos integrales</span></div></div>
+            <div class="col-md-4"><div class="metric"><strong>22</strong><span>aliados estratégicos en red</span></div></div>
           </div>
         </div>
       </section>
 
-      <section id="programas" class="section-py">
+      <section class="section-space">
         <div class="container">
-          <h2 class="section-title text-center mb-4">Programas principales</h2>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-3 animate-on-scroll">
-              <article class="card program-card h-100 border-0 shadow-sm">
-                <div class="program-card-image program-img-1"></div>
-                <div class="card-body">
-                  <h3 class="h5">Educación y refuerzo</h3>
-                  <p class="mb-0">Acompañamiento académico para niñas, niños y jóvenes.</p>
-                </div>
-              </article>
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <p class="kicker">Visual storytelling</p>
+              <h2>Historias de resiliencia que inspiran acción colectiva.</h2>
+              <p class="lead">Nuestro nuevo enfoque UX presenta testimonios, logros y rutas de participación de forma clara para fortalecer confianza y conexión emocional.</p>
             </div>
-            <div class="col-md-6 col-lg-3 animate-on-scroll">
-              <article class="card program-card h-100 border-0 shadow-sm">
-                <div class="program-card-image program-img-2"></div>
-                <div class="card-body">
-                  <h3 class="h5">Familias y comunidad</h3>
-                  <p class="mb-0">Fortalecemos redes de apoyo en el territorio.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3 animate-on-scroll">
-              <article class="card program-card h-100 border-0 shadow-sm">
-                <div class="program-card-image program-img-3"></div>
-                <div class="card-body">
-                  <h3 class="h5">Bienestar emocional</h3>
-                  <p class="mb-0">Espacios de orientación y cuidado psicosocial.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-3 animate-on-scroll">
-              <article class="card program-card h-100 border-0 shadow-sm">
-                <div class="program-card-image program-img-4"></div>
-                <div class="card-body">
-                  <h3 class="h5">Voluntariado</h3>
-                  <p class="mb-0">Personas y organizaciones que suman al cambio.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="impacto" class="impact-section section-py text-white">
-        <div class="container">
-          <h2 class="section-title text-white text-center mb-4">Impacto en cifras</h2>
-          <div class="row g-4 text-center">
-            <div class="col-md-4 animate-on-scroll">
-              <div class="impact-card p-3 rounded-3 bg-dark bg-opacity-25">
-                <div class="impact-number" data-target="1200" data-duration="1800">0</div>
-                <div class="impact-label">Niñas y niños acompañados</div>
+            <div class="col-lg-5">
+              <div class="card card-soft p-4 story-block">
+                <p class="mb-2">“En Casa Isis encontré un espacio seguro para aprender y soñar en grande.”</p>
+                <strong>- Participante programa juvenil</strong>
               </div>
-            </div>
-            <div class="col-md-4 animate-on-scroll">
-              <div class="impact-card p-3 rounded-3 bg-dark bg-opacity-25">
-                <div class="impact-number" data-target="95" data-duration="1800">0</div>
-                <div class="impact-label">Voluntarios activos</div>
-              </div>
-            </div>
-            <div class="col-md-4 animate-on-scroll">
-              <div class="impact-card p-3 rounded-3 bg-dark bg-opacity-25">
-                <div class="impact-number" data-target="38" data-duration="1800">0</div>
-                <div class="impact-label">Aliados estratégicos</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="donar" class="cta-donate-section section-py text-white">
-        <div class="container text-center">
-          <h2 class="section-title text-white mb-3">Tu aporte cambia historias</h2>
-          <p class="mb-4 text-white-80">Elige un monto sugerido o ingresa uno personalizado.</p>
-
-          <div class="d-flex justify-content-center flex-wrap mb-3">
-            <button type="button" class="btn btn-donation-amount" data-amount="25000">$25.000</button>
-            <button type="button" class="btn btn-donation-amount" data-amount="50000">$50.000</button>
-            <button type="button" class="btn btn-donation-amount" data-amount="100000">$100.000</button>
-          </div>
-
-          <div class="input-group justify-content-center mx-auto mb-4" style="max-width: 320px">
-            <span class="input-group-text">$</span>
-            <input
-              id="customAmount"
-              class="form-control"
-              type="number"
-              min="5000"
-              step="1000"
-              placeholder="Otro monto"
-              aria-label="Otro monto de donación"
-            />
-          </div>
-
-          <a id="btnDonateFinal" href="#" class="btn btn-cta-large">Donar ahora</a>
-        </div>
-      </section>
-
-      <section id="contacto" class="section-py">
-        <div class="container">
-          <h2 class="section-title text-center mb-2">Contáctanos</h2>
-          <p class="text-center text-muted mb-4">
-            ¿Quieres ser voluntario, aliado o tienes alguna pregunta? Escríbenos.
-          </p>
-
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              <form
-                id="contactForm"
-                name="contacto-isisrico"
-                method="POST"
-                action="/"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                class="contact-form bg-light p-4 rounded-3 shadow-sm"
-              >
-                <input type="hidden" name="form-name" value="contacto-isisrico" />
-
-                <p class="d-none">
-                  <label>No llenar si eres humano: <input name="bot-field" /></label>
-                </p>
-
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre *</label>
-                  <input id="nombre" type="text" class="form-control" name="nombre" required />
-                </div>
-
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email *</label>
-                  <input id="email" type="email" class="form-control" name="email" required />
-                </div>
-
-                <div class="mb-3">
-                  <label for="participacion" class="form-label">¿Cómo deseas participar? *</label>
-                  <select id="participacion" class="form-select" name="tipo_participacion" required>
-                    <option value="">Selecciona una opción</option>
-                    <option value="Voluntario">Voluntario</option>
-                    <option value="Aliado">Aliado</option>
-                    <option value="Donante">Donante</option>
-                    <option value="Información general">Información general</option>
-                  </select>
-                </div>
-
-                <div class="mb-3">
-                  <label for="mensaje" class="form-label">Mensaje *</label>
-                  <textarea id="mensaje" class="form-control" name="mensaje" rows="4" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
-              </form>
             </div>
           </div>
         </div>
       </section>
     </main>
-
-    <footer class="footer section-py">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-6">
-            <h2 class="h4">Fundación ISISRICO</h2>
-            <p class="mb-0">Trabajamos para fortalecer el tejido social desde la educación y el cuidado.</p>
-          </div>
-          <div class="col-md-3">
-            <h3 class="h6 text-uppercase">Enlaces</h3>
-            <ul class="list-unstyled mb-0">
-              <li><a href="#nosotros" class="footer-link">Nosotros</a></li>
-              <li><a href="#programas" class="footer-link">Programas</a></li>
-              <li><a href="#contacto" class="footer-link">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="h6 text-uppercase">Síguenos</h3>
-            <a href="#" class="footer-social-link" aria-label="Instagram">Instagram</a>
-            <a href="#" class="footer-social-link" aria-label="Facebook">Facebook</a>
-          </div>
-        </div>
-        <hr class="my-4 border-light" />
-        <p class="mb-0 small">© <span id="currentYear"></span> Fundación ISISRICO. Todos los derechos reservados.</p>
-      </div>
-    </footer>
-
-    <a href="#donar" class="floating-donate-btn" aria-label="Ir a sección donar">Donar</a>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/main.js"></script>
+    <div id="site-footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>

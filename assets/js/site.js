@@ -41,7 +41,7 @@
           <div class="row g-4">
             <div class="col-md-6">
               <h2 class="h5 text-white">Casa Isis</h2>
-              <p class="mb-0">Acompañamos comunidades con educación, cuidado emocional y oportunidades para transformar vidas.</p>
+              <p class="mb-0">Acompañamos a la niñez, adolescencia y familias con procesos de protección, formación y participación comunitaria.</p>
             </div>
             <div class="col-md-3">
               <h3 class="h6 text-white">Navegación</h3>
@@ -51,8 +51,8 @@
             </div>
             <div class="col-md-3">
               <h3 class="h6 text-white">Contacto</h3>
-              <p class="mb-1">Bogotá, Colombia</p>
-              <p class="mb-0">hola@casaisis.org</p>
+              <p class="mb-1">Rionegro, Antioquia</p>
+              <p class="mb-0">contacto@isisrico.org</p>
             </div>
           </div>
           <hr class="border-light border-opacity-25 my-4">

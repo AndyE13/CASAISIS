@@ -7,7 +7,7 @@
     <meta name="description" content="Casa Isis Rico mejora la calidad de vida de personas adultas mayores mediante alimentación comunitaria, acompañamiento emocional y actividades para un envejecimiento digno y activo." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
@@ -16,26 +16,68 @@
   <body data-page="index.html">
     <header id="site-navbar"></header>
     <main>
-      <section class="container page-header">
-        <div class="hero-panel hero-story">
-          <div class="row g-4 g-lg-5 align-items-center">
-            <div class="col-lg-6">
-              <p class="kicker text-warning">Fundación Casa Isis Rico</p>
-              <h1 class="mb-3">Una comunidad que cuida, escucha y acompaña a las personas adultas mayores.</h1>
-              <p class="lead mb-4">Impulsamos un envejecimiento digno y activo con alimentación comunitaria, bienestar emocional y actividades de salud integral para que nadie atraviese esta etapa en soledad.</p>
-              <div class="d-flex gap-2 flex-wrap">
-                <a class="btn btn-brand btn-lg" href="contacto.html">DONAR</a>
-                <a class="btn btn-outline-light btn-lg" href="voluntariado.html">VOLUNTARIADO</a>
-              </div>
+      <section class="page-header hero-home" aria-label="Encabezado principal Casa Isis">
+        <!-- Replace with real Casa Isis older adult photography -->
+        <div class="container hero-content d-flex justify-content-center">
+          <article class="hero-highlight-card text-center">
+            <span class="hero-badge" aria-hidden="true">❤</span>
+            <p class="kicker mb-2 text-dark">Casa Isis Rico</p>
+            <h1>DONACIONES QUE AYUDAN A CAMBIAR VIDAS</h1>
+            <p class="mb-4">Cada apoyo fortalece la dignidad, el cuidado y la alegría de nuestros adultos mayores en comunidad.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <a class="btn btn-dark btn-lg hero-action" href="https://providencia.org.mx/causes/altata" target="_blank" rel="noopener noreferrer">Donar ahora</a>
+              <a class="btn btn-outline-dark btn-lg hero-action" href="#como-ayudar">Read More</a>
             </div>
-            <div class="col-lg-6">
-              <figure class="mb-0 hero-media">
-                <img
-                  class="image-placeholder"
-                  src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=1200&q=80"
-                  alt="Fotografía temporal de stock para futura imagen Casa Isis: personas adultas mayores compartiendo una actividad comunitaria con sonrisas y acompañamiento cálido."
-                />
-              </figure>
+          </article>
+        </div>
+      </section>
+
+      <section id="como-ayudar" class="section-space section-soft" aria-label="Cómo puedes ayudar en Casa Isis">
+        <div class="container">
+          <div class="text-center section-heading">
+            <p class="kicker">Participa hoy</p>
+            <h2>¿Cómo puedes ayudar?</h2>
+            <p class="lead mb-0">Tu participación crea una red de cuidado real para que más personas mayores vivan con bienestar, compañía y respeto.</p>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-sm-6 col-lg-3">
+              <article class="card-soft help-card h-100">
+                <span class="help-icon" aria-hidden="true">💛</span>
+                <h3 class="h5">Donar</h3>
+                <p class="mb-0">Contribuye a brindar alimentos, talleres y atención integral para nuestros beneficiarios.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="card-soft help-card h-100">
+                <span class="help-icon" aria-hidden="true">🤝</span>
+                <h3 class="h5">Ser voluntario</h3>
+                <p class="mb-0">Comparte tu tiempo para acompañar con empatía a personas adultas mayores.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="card-soft help-card h-100">
+                <span class="help-icon" aria-hidden="true">🏛️</span>
+                <h3 class="h5">Convertirse en aliado</h3>
+                <p class="mb-0">Conecta a tu empresa u organización para multiplicar el impacto social.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <article class="card-soft help-card h-100">
+                <span class="help-icon" aria-hidden="true">📣</span>
+                <h3 class="h5">Compartir la causa</h3>
+                <p class="mb-0">Difunde nuestra misión para llegar a más familias y comunidades solidarias.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="story-video mt-5">
+            <!-- Replace VIDEO_URL with Casa Isis institutional video -->
+            <button class="video-trigger" type="button" data-bs-toggle="modal" data-bs-target="#storyVideoModal" aria-label="Reproducir video institucional Casa Isis">
+              <span class="play-circle" aria-hidden="true">▶</span>
+            </button>
+            <div class="video-copy text-center">
+              <p class="kicker text-warning mb-2">Historias que inspiran</p>
+              <h3>Conoce cómo Casa Isis transforma vidas en cada encuentro.</h3>
             </div>
           </div>
         </div>
@@ -46,6 +88,29 @@
           <div class="text-center section-heading">
             <p class="kicker">Impacto real</p>
             <h2>Resultados que reflejan cuidado y compromiso comunitario.</h2>
+          </div>
+          <div class="row g-4 mb-4">
+            <div class="col-md-4">
+              <article class="card-soft impact-card h-100">
+                <span class="impact-icon" aria-hidden="true">💬</span>
+                <h3 class="h5">Acompañamiento</h3>
+                <p class="mb-0">Brindamos escucha cercana y compañía constante para reducir la soledad en la vejez.</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card-soft impact-card h-100">
+                <span class="impact-icon" aria-hidden="true">🤲</span>
+                <h3 class="h5">Comunidad</h3>
+                <p class="mb-0">Fortalecemos redes solidarias entre familias, voluntariado y aliados locales.</p>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="card-soft impact-card h-100">
+                <span class="impact-icon" aria-hidden="true">🌼</span>
+                <h3 class="h5">Envejecimiento digno</h3>
+                <p class="mb-0">Promovemos bienestar integral para que cada etapa de vida se viva con dignidad.</p>
+              </article>
+            </div>
           </div>
           <div class="row g-4">
             <div class="col-6 col-lg-3">
@@ -86,20 +151,35 @@
             <p class="kicker">Nuestra esencia</p>
             <h2>Misión y visión en acción para una vejez con dignidad.</h2>
           </div>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <article class="card-soft value-card h-100">
-                <span class="value-icon" aria-hidden="true">💜</span>
-                <h3 class="h4 mt-3">Misión</h3>
-                <p class="mb-0">Fortalecer el bienestar integral de personas adultas mayores con acompañamiento humano, actividades de salud y espacios seguros de convivencia.</p>
-              </article>
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+              <figure class="mb-0 h-100 about-visual">
+                <img class="image-placeholder" src="https://images.unsplash.com/photo-1471958680802-1345a694ba6d?auto=format&fit=crop&w=1000&q=80" alt="Persona adulta mayor sonriendo en actividad comunitaria acompañada por voluntariado." />
+              </figure>
             </div>
-            <div class="col-md-6">
-              <article class="card-soft value-card h-100">
-                <span class="value-icon" aria-hidden="true">🌅</span>
-                <h3 class="h4 mt-3">Visión</h3>
-                <p class="mb-0">Ser una organización referente en cuidado comunitario, inspirando una cultura donde envejecer signifique vivir con respeto, participación y alegría.</p>
-              </article>
+            <div class="col-lg-7">
+              <div class="row g-4 h-100">
+                <div class="col-md-6">
+                  <article class="card-soft value-card h-100">
+                    <span class="value-icon" aria-hidden="true">💜</span>
+                    <h3 class="h4 mt-3">Misión</h3>
+                    <p class="mb-0">Fortalecer el bienestar integral de personas adultas mayores con acompañamiento humano, actividades de salud y espacios seguros de convivencia.</p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="card-soft value-card h-100">
+                    <span class="value-icon" aria-hidden="true">🌅</span>
+                    <h3 class="h4 mt-3">Visión</h3>
+                    <p class="mb-0">Ser una organización referente en cuidado comunitario, inspirando una cultura donde envejecer signifique vivir con respeto, participación y alegría.</p>
+                  </article>
+                </div>
+                <div class="col-12">
+                  <article class="card-soft value-card story-block h-100">
+                    <h3 class="h4">Nuestra historia</h3>
+                    <p class="mb-0">Casa Isis Rico nace con una convicción clara: ninguna persona mayor debería transitar esta etapa sin compañía, cuidado y oportunidades para mantenerse activa dentro de su comunidad.</p>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -118,7 +198,7 @@
                 <div class="p-4">
                   <h3 class="h5">Bienestar y Salud Activa</h3>
                   <p>Sesiones de movilidad, salud preventiva y autocuidado para mantener energía y confianza.</p>
-                  <a class="btn btn-outline-brand" href="programas.html">Learn More</a>
+                  <a class="btn btn-outline-brand" href="programas.html">Conocer programa</a>
                 </div>
               </article>
             </div>
@@ -128,7 +208,7 @@
                 <div class="p-4">
                   <h3 class="h5">Acompañamiento Emocional</h3>
                   <p>Red de escucha y apoyo afectivo para disminuir la soledad y fortalecer la salud emocional.</p>
-                  <a class="btn btn-outline-brand" href="programas.html">Learn More</a>
+                  <a class="btn btn-outline-brand" href="programas.html">Conocer programa</a>
                 </div>
               </article>
             </div>
@@ -138,11 +218,19 @@
                 <div class="p-4">
                   <h3 class="h5">Comunidad y Alimentación</h3>
                   <p>Encuentros comunitarios con alimentos nutritivos para fomentar la convivencia y el sentido de pertenencia.</p>
-                  <a class="btn btn-outline-brand" href="programas.html">Learn More</a>
+                  <a class="btn btn-outline-brand" href="programas.html">Conocer programa</a>
                 </div>
               </article>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="donation-band section-space" aria-label="Banda de donación emocional">
+        <div class="container text-center">
+          <p class="kicker text-warning">Sostengamos esta misión</p>
+          <h2>Cada donativo se transforma en alimentos, compañía y esperanza para una persona mayor.</h2>
+          <a class="btn btn-brand btn-lg mt-3" href="https://providencia.org.mx/causes/altata" target="_blank" rel="noopener noreferrer">Donar ahora</a>
         </div>
       </section>
 
@@ -175,7 +263,7 @@
         </div>
       </section>
 
-      <section class="section-space section-soft" aria-label="Formas de ayudar">
+      <section id="voluntariado" class="section-space section-soft" aria-label="Formas de ayudar">
         <div class="container">
           <div class="text-center section-heading">
             <p class="kicker">Cómo ayudar</p>
@@ -186,7 +274,7 @@
               <article class="card-soft action-card h-100">
                 <h3 class="h4">Donar</h3>
                 <p>Haz posible más alimentos, talleres de salud y acompañamiento constante.</p>
-                <a class="btn btn-brand" href="contacto.html">Quiero donar</a>
+                <a class="btn btn-brand" href="https://providencia.org.mx/causes/altata" target="_blank" rel="noopener noreferrer">Quiero donar</a>
               </article>
             </div>
             <div class="col-md-4">
@@ -206,7 +294,37 @@
           </div>
         </div>
       </section>
+
+      <section class="section-space" aria-label="Aliados Casa Isis">
+        <div class="container text-center">
+          <p class="kicker">Aliados que suman</p>
+          <h2>Organizaciones solidarias que confían en Casa Isis Rico.</h2>
+          <div class="ally-marquee mt-4">
+            <div class="ally-track">
+              <span>Fundación Comunitaria</span><span>Salud para Todas las Edades</span><span>Empresa Solidaria MX</span><span>Red de Voluntariado</span><span>Alimentos con Amor</span>
+              <span>Fundación Comunitaria</span><span>Salud para Todas las Edades</span><span>Empresa Solidaria MX</span><span>Red de Voluntariado</span><span>Alimentos con Amor</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <div class="modal fade" id="storyVideoModal" tabindex="-1" aria-labelledby="storyVideoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h2 class="modal-title fs-5 text-white" id="storyVideoModalLabel">Video institucional Casa Isis</h2>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body pt-0">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/VIDEO_URL" title="Video institucional Casa Isis" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="site-footer"></div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="assets/js/site.js"></script>

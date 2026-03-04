@@ -13,7 +13,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(120deg, rgba(24, 20, 14, 0.66), rgba(24, 20, 14, 0.35)),
-    url('/CASAISIS/img/Heroabuelos.png') center / cover no-repeat;
+    url('img/Heroabuelos.png') center / cover no-repeat;
   animation: heroZoom 14s ease-in-out infinite alternate;
 }
 

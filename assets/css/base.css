@@ -1,14 +1,14 @@
 :root {
-  --color-primary: #7a3e65;
-  --color-primary-dark: #5b2d4a;
-  --color-secondary: #e9a15b;
-  --color-accent: #6e8b8a;
-  --color-surface: #fff7f3;
-  --color-surface-soft: #fffdfb;
-  --color-ink: #2e2530;
-  --color-muted: #5f5562;
-  --color-border: #eaded7;
-  --shadow-soft: 0 12px 30px rgba(46, 37, 48, 0.12);
+  --color-primary: #f7941d;
+  --color-primary-dark: #d97d10;
+  --color-secondary: #ffe0bc;
+  --color-accent: #ffbf75;
+  --color-surface: #f5f6f8;
+  --color-surface-soft: #ffffff;
+  --color-ink: #1f2430;
+  --color-muted: #5e6574;
+  --color-border: #e5e8ef;
+  --shadow-soft: 0 16px 36px rgba(24, 32, 56, 0.1);
   --radius-md: 1rem;
   --radius-lg: 1.5rem;
 }
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Open Sans', 'Inter', system-ui, -apple-system, sans-serif;
   color: var(--color-ink);
   background: var(--color-surface-soft);
   line-height: 1.75;
@@ -33,7 +33,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Poppins', 'Inter', sans-serif;
+  font-family: 'Playfair Display', 'Poppins', serif;
   line-height: 1.25;
   font-weight: 700;
   color: var(--color-ink);
@@ -56,7 +56,7 @@ h2 {
 }
 
 .kicker {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;

@@ -13,7 +13,7 @@
   position: absolute;
   inset: 0;
   background: linear-gradient(120deg, rgba(24, 20, 14, 0.66), rgba(24, 20, 14, 0.35)),
-    url('https://images.unsplash.com/photo-1576765608866-5b51046452be?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat;
+    url('/CASAISIS/img/Heroabuelos.png') center / cover no-repeat;
   animation: heroZoom 14s ease-in-out infinite alternate;
 }
 
@@ -21,15 +21,59 @@
   position: relative;
   z-index: 2;
 }
+/*animacion de palpitacion para el hero*/
+@keyframes heroPulse {
+  0% {
+    transform: scale(1);
+  }
 
+  50% {
+    transform: scale(1.03);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 .hero-section .hero-highlight-card {
-  max-width: 680px;
-  border-radius: 1rem;
-  background: #f7b538;
+  max-width: 380px;
+  border-radius: 0;
+  background: #e1990f;
   color: #1f2430;
   padding: clamp(2rem, 4vw, 3rem);
   box-shadow: 0 20px 40px rgba(24, 18, 9, 0.3);
   animation: heroFadeIn 0.9s ease;
+
+  position: relative;
+  overflow: visible; /* ⭐ permite salir */
+   animation: heroPulse 6s ease-in-out infinite;
+}
+
+/* ===== TITULO QUE ROMPE EL CUADRO ===== */
+
+.hero-title {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 750px;       /* más ancho que el cuadro */
+  max-width: 90vw;
+
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1.1;
+}
+
+/* ===== SUBTEXTO TAMBIÉN SE SALE ===== */
+
+.hero-subtitle {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  max-width: 85vw;
+  font-weight: 600;
 }
 
 .hero-section .hero-highlight-card h1 {

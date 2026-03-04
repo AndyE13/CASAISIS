@@ -9,8 +9,9 @@
 
 .metric strong {
   display: block;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
   color: var(--color-primary);
+  line-height: 1.15;
 }
 
 .program-item {

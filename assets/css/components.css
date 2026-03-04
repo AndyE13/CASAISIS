@@ -148,6 +148,21 @@
   border-radius: 50%;
   border: 0;
   background: rgba(247, 148, 29, 0.96);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, rgba(10, 14, 28, 0.88), rgba(10, 14, 28, 0.58)),
+    url('https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&w=1800&q=80') center / cover no-repeat fixed;
+  animation: heroFadeIn 1s ease;
+}
+
+.hero-content {
+  color: #fff;
+}
+
+.hero-content h1,
+.hero-content .lead {
   color: #fff;
   box-shadow: 0 16px 30px rgba(8, 10, 14, 0.32);
   transition: transform 0.25s ease;
@@ -161,6 +176,8 @@
 .play-circle {
   font-size: 1.7rem;
   margin-left: 0.2rem;
+.hero-content .lead {
+  max-width: 760px;
 }
 
 .card-soft {
@@ -349,6 +366,7 @@
   from {
     opacity: 0;
     transform: translateY(16px);
+    transform: translateY(14px);
   }
 
   to {
@@ -370,6 +388,10 @@
 @media (max-width: 991px) {
   .hero-home {
     min-height: 84vh;
+@media (max-width: 991px) {
+  .hero-home {
+    background-attachment: scroll;
+    min-height: 80vh;
   }
 
   .site-navbar {

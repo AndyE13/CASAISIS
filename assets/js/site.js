@@ -98,4 +98,7 @@
 
   handleStickyNavbar();
 
+  if (window.AOS) {
+    window.AOS.init({ duration: 700, offset: 60, once: true });
+  }
 })();

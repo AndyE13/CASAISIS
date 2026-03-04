@@ -30,14 +30,14 @@
 }
 
 .nav-donate-btn {
-  box-shadow: 0 10px 20px rgba(247, 148, 29, 0.35);
+  box-shadow: 0 10px 20px rgba(191, 182, 54, 0.35);
 }
 
 .navbar-brand-mark {
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), #ffb866);
+  background: linear-gradient(135deg, var(--color-primary), #D8CF72);
   display: inline-grid;
   place-items: center;
   color: #fff;
@@ -56,7 +56,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: rgba(247, 148, 29, 0.16);
+  background: rgba(191, 182, 54, 0.16);
   font-size: 1.35rem;
   margin-bottom: 0.75rem;
 }
@@ -89,7 +89,7 @@
   height: 86px;
   border-radius: 50%;
   border: 0;
-  background: rgba(247, 148, 29, 0.96);
+  background: rgba(191, 182, 54, 0.96);
   color: #fff;
   box-shadow: 0 16px 30px rgba(8, 10, 14, 0.32);
   transition: transform 0.25s ease;
@@ -116,7 +116,7 @@
 
 .card-soft:hover {
   transform: translateY(-7px);
-  box-shadow: 0 22px 40px rgba(24, 32, 56, 0.14);
+  box-shadow: 0 22px 40px rgba(94, 128, 125, 0.14);
 }
 
 .story-block {
@@ -126,7 +126,7 @@
 
 .cta-band {
   border-radius: var(--radius-lg);
-  background: #202632;
+  background: #5e807d;
   color: #fff;
   padding: 2rem;
 }
@@ -152,7 +152,7 @@
 }
 
 .site-footer {
-  background: #141a24;
+  background: #3F5755;
   color: rgba(255, 255, 255, 0.88);
 }
 
@@ -190,7 +190,7 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: rgba(247, 148, 29, 0.17);
+  background: rgba(191, 182, 54, 0.17);
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
 }
@@ -207,7 +207,7 @@
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 0.9rem;
-  background: rgba(247, 148, 29, 0.14);
+  background: rgba(191, 182, 54, 0.14);
   font-size: 1.55rem;
 }
 

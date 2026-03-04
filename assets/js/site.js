@@ -20,8 +20,8 @@
       <nav class="navbar navbar-expand-lg site-navbar fixed-top" aria-label="Navegación principal">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="/CASAISIS/img/logocolor.png" alt="Casa Isis Rico" height="50">
-             <span>Casa Isis Rico</span>
+          <img src="img/logocolor.png" alt="Casa Isis Rico" height="50">
+          <span>Casa Isis Rico</span>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>

@@ -99,3 +99,16 @@
   handleStickyNavbar();
 
 })();
+
+function shareCasaIsis() {
+ if (navigator.share) {
+   navigator.share({
+     title: "Casa Isis Rico",
+     text: "Apoya el envejecimiento digno en Casa Isis",
+     url: window.location.href
+   });
+ } else {
+   navigator.clipboard.writeText(window.location.href);
+   alert("Link copiado para compartir");
+ }
+}

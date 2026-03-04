@@ -46,23 +46,17 @@
               <a class="btn btn-brand" href="https://providencia.org.mx/causes/altata" target="_blank" rel="noopener noreferrer">Donar ahora</a>
             </div>
             <div class="col-sm-6 col-lg-3">
-              <h3 class="h6 text-white">Navegación</h3>
-              <ul class="list-unstyled mb-0">
-                ${links.map(([href, label]) => `<li><a href="${href}">${label}</a></li>`).join('')}
-              </ul>
-            </div>
-            <div class="col-sm-6 col-lg-3">
               <h3 class="h6 text-white">Contacto</h3>
-              <p class="mb-1">Guadalajara, Jalisco</p>
-              <p class="mb-1">contacto@isisrico.org</p>
-              <p class="mb-0">+52 33 0000 0000</p>
+              <p class="mb-1">Puerto Altata #1134, Guadalajara, Jalisco</p>
+              <p class="mb-1">direccion@isisrico.org</p>
+              <p class="mb-0">3342815588</p>
             </div>
             <div class="col-lg-2">
               <h3 class="h6 text-white">Síguenos</h3>
               <ul class="list-unstyled mb-0 social-links">
-                <li><a href="#" aria-label="Facebook">Facebook</a></li>
-                <li><a href="#" aria-label="Instagram">Instagram</a></li>
-                <li><a href="#" aria-label="YouTube">YouTube</a></li>
+                <li><a href="https://www.facebook.com/CasaIsisRico/" aria-label="Facebook">Facebook</a></li>
+                <li><a href="https://www.instagram.com/casaisisrico_/" aria-label="Instagram">Instagram</a></li>
+                <li><a href="https://www.youtube.com/@casaisisrico6288" aria-label="YouTube">YouTube</a></li>
               </ul>
             </div>
           </div>

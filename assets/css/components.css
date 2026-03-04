@@ -1,13 +1,13 @@
 .site-navbar {
-  background: rgba(14, 18, 30, 0.2);
+  background: rgba(94, 128, 125, 0.86);
   backdrop-filter: blur(8px);
   transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
   padding: 0.9rem 0;
 }
 
 .site-navbar.scrolled {
-  background: rgba(14, 18, 30, 0.94);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+  background: rgba(94, 128, 125, 0.98);
+  box-shadow: 0 10px 28px rgba(35, 50, 49, 0.35);
   padding: 0.6rem 0;
 }
 
@@ -18,7 +18,7 @@
 
 .site-navbar .nav-link:hover,
 .site-navbar .nav-link.active {
-  color: var(--color-primary);
+  color: var(--color-brand-yellow);
 }
 
 .navbar-toggler {
@@ -37,7 +37,7 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-primary), #D8CF72);
+  background: linear-gradient(135deg, var(--color-brand-yellow), var(--color-brand-fuchsia));
   display: inline-grid;
   place-items: center;
   color: #fff;
@@ -152,8 +152,12 @@
 }
 
 .site-footer {
-  background: #3F5755;
+  background: var(--color-brand-green);
   color: rgba(255, 255, 255, 0.88);
+}
+
+.site-footer .text-white {
+  color: var(--color-brand-yellow) !important;
 }
 
 .site-footer a {
@@ -162,7 +166,20 @@
 }
 
 .site-footer a:hover {
-  color: var(--color-primary);
+  color: var(--color-brand-yellow);
+}
+
+.site-footer .btn-brand {
+  background: var(--color-brand-fuchsia);
+  border-color: var(--color-brand-fuchsia);
+  color: #fff;
+}
+
+.site-footer .btn-brand:hover,
+.site-footer .btn-brand:focus {
+  background: var(--color-brand-yellow);
+  border-color: var(--color-brand-yellow);
+  color: var(--color-btn-text-dark);
 }
 
 .social-links li + li {
@@ -291,7 +308,7 @@
 
 @media (max-width: 991px) {
   .site-navbar {
-    background: rgba(14, 18, 30, 0.94);
+    background: rgba(94, 128, 125, 0.98);
   }
 
   .nav-donate-btn {

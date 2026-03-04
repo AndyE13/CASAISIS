@@ -21,7 +21,7 @@
         <div class="container">
           <a class="navbar-brand d-flex align-items-center fw-semibold" href="index.html">
             <span class="navbar-brand-mark" aria-hidden="true">CI</span>
-            Casa Isis
+            Casa Isis Rico
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menú">
             <span class="navbar-toggler-icon"></span>
@@ -40,8 +40,8 @@
         <div class="container">
           <div class="row g-4">
             <div class="col-md-6">
-              <h2 class="h5 text-white">Casa Isis</h2>
-              <p class="mb-0">Acompañamos a la niñez, adolescencia y familias con procesos de protección, formación y participación comunitaria.</p>
+              <h2 class="h5 text-white">Casa Isis Rico</h2>
+              <p class="mb-0">Trabajamos para mejorar la calidad de vida de las personas adultas mayores mediante alimentación comunitaria, apoyo emocional y actividades para un envejecimiento digno y activo.</p>
             </div>
             <div class="col-md-3">
               <h3 class="h6 text-white">Navegación</h3>
@@ -51,12 +51,12 @@
             </div>
             <div class="col-md-3">
               <h3 class="h6 text-white">Contacto</h3>
-              <p class="mb-1">Rionegro, Antioquia</p>
-              <p class="mb-0">contacto@isisrico.org</p>
+              <p class="mb-1">Guadalajara, Jalisco</p>
+              <p class="mb-0">contacto@isisrico.org (Suggested Content)</p>
             </div>
           </div>
           <hr class="border-light border-opacity-25 my-4">
-          <small>© ${year} Casa Isis. Todos los derechos reservados.</small>
+          <small>© ${year} Casa Isis Rico. Todos los derechos reservados.</small>
         </div>
       </footer>`;
   }

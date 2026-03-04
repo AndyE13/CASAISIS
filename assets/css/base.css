@@ -1,8 +1,12 @@
 :root {
   --color-primary: #BFB636;
-  --color-primary-dark: #A79F2F;
-  --color-secondary: #E5E1A6;
-  --color-accent: #D2CA58;
+  --color-primary-dark: #a79f2f;
+  --color-secondary: #5e807d;
+  --color-accent: #C3007A;
+  --color-brand-yellow: #BFB636;
+  --color-brand-green: #5e807d;
+  --color-brand-fuchsia: #C3007A;
+  --color-btn-text-dark: #1f2e2c;
   --color-surface: #f5f6f8;
   --color-surface-soft: #ffffff;
   --color-ink: #5e807d;
@@ -69,27 +73,67 @@ h2 {
 }
 
 .btn-brand {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #fff;
+  background: var(--color-brand-yellow);
+  border-color: var(--color-brand-yellow);
+  color: var(--color-btn-text-dark);
 }
 
 .btn-brand:hover,
 .btn-brand:focus {
-  background: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
+  background: var(--color-brand-fuchsia);
+  border-color: var(--color-brand-fuchsia);
   color: #fff;
 }
 
 .btn-outline-brand {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
+  border-color: var(--color-brand-green);
+  color: var(--color-brand-green);
 }
 
 .btn-outline-brand:hover,
 .btn-outline-brand:focus {
-  background: var(--color-primary);
+  background: var(--color-brand-green);
+  border-color: var(--color-brand-green);
   color: #fff;
+}
+
+.btn {
+  background: var(--color-brand-yellow);
+  color: var(--color-btn-text-dark);
+  border-color: var(--color-brand-yellow);
+}
+
+.btn:hover,
+.btn:focus {
+  background: var(--color-brand-fuchsia);
+  color: #fff;
+  border-color: var(--color-brand-fuchsia);
+}
+
+.btn-light {
+  background: var(--color-brand-yellow);
+  border-color: var(--color-brand-yellow);
+  color: var(--color-btn-text-dark);
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background: var(--color-brand-fuchsia);
+  border-color: var(--color-brand-fuchsia);
+  color: #fff;
+}
+
+.btn-outline-light {
+  background: transparent;
+  border-color: var(--color-brand-yellow);
+  color: var(--color-brand-yellow);
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background: var(--color-brand-yellow);
+  border-color: var(--color-brand-yellow);
+  color: var(--color-btn-text-dark);
 }
 
 .focus-ring:focus-visible,

@@ -1,71 +1,74 @@
-# Casa Isis — Rediseño UX/UI (fase inicial)
+# Casa Isis — Rediseño UX/UI (Proyecto Frontend)
 
-## 1) Nueva estructura UX propuesta
+Rediseño conceptual del sitio web de **Casa Isis**, una organización dedicada a apoyar a **adultos en situación de vulnerabilidad**.
 
-### Objetivo de experiencia
-Construir una web clara, cálida y confiable para que personas, voluntarios y empresas comprendan el impacto de Casa Isis y encuentren una ruta de participación en pocos clics.
+El proyecto consistió en mejorar la **experiencia de navegación y la composición visual del sitio**, reorganizando la información y creando una interfaz más clara, accesible y cómoda para los usuarios.
 
-### Arquitectura de información
-- **Inicio (`index.html`)**: narrativa emocional + métricas clave + llamadas a la acción.
-- **Nosotros (`nosotros.html`)**: misión, visión y principios para generar confianza institucional.
-- **Programas (`programas.html`)**: oferta programática organizada por líneas de intervención.
-- **Voluntariado (`voluntariado.html`)**: propuesta de valor y formulario Netlify para postulación.
-- **Aliados (`aliados.html`)**: opciones de colaboración y formulario Netlify para empresas.
-- **Contacto (`contacto.html`)**: canales directos y promesa de respuesta.
+El rediseño fue desarrollado **utilizando únicamente HTML, CSS y JavaScript**, con el objetivo de demostrar cómo es posible mejorar la experiencia de usuario, la jerarquía visual y la organización del contenido utilizando tecnologías web fundamentales.
 
-## 2) Dirección visual sugerida
+---
 
-### Paleta inspirada en logo Casa Isis
-- **Primario violeta** `#6F2DBD` (confianza + humanidad)
-- **Primario oscuro** `#4B1D82` (profundidad y contraste)
-- **Secundario dorado** `#F4B400` (esperanza/energía)
-- **Acento turquesa** `#00A6A6` (comunidad + frescura)
-- **Fondo suave** `#FDF9FF`
-- **Texto principal** `#1F1B2D`
+# Objetivo del proyecto
 
-### Jerarquía tipográfica
-- **Headings**: Poppins 600–800
-- **Body/UI**: Inter 400–700
-- Escala responsive basada en Bootstrap y clases semánticas (`display`, `h1`, `h2`, `lead`).
+El objetivo fue rediseñar la estructura y presentación del sitio para:
 
-### Principios visuales
-- Hero emocional con CTA dual (programas / voluntariado).
-- Tarjetas suaves para bloques de confianza y lectura escaneable.
-- Bloques narrativos de historias/testimonios.
-- Contraste alto, `focus-visible`, estructura semántica y navegación consistente.
+- Mejorar la **claridad de la información**
+- Facilitar la **navegación entre secciones**
+- Crear una **jerarquía y composición visual más equilibrada**
+- Mantener coherencia con la **identidad visual original de la organización**
 
-## 3) Arquitectura técnica creada (React-friendly)
+Se buscó que las personas puedan **explorar el sitio de forma intuitiva y cómoda**, entendiendo rápidamente qué hace Casa Isis y cómo pueden participar.
 
-```
-/
-├── index.html
-├── nosotros.html
-├── programas.html
-├── voluntariado.html
-├── aliados.html
-├── contacto.html
-├── assets/
-│   ├── css/
-│   │   ├── base.css
-│   │   ├── components.css
-│   │   └── pages.css
-│   └── js/
-│       └── site.js
-└── docs/
-    └── next-development-steps.md
-```
+---
 
-### Reutilización de UI
-- **Navbar** y **footer** se inyectan con JavaScript (`assets/js/site.js`) en cada página usando `data-page`.
-- Esto evita duplicación y deja listo el camino para migrar a componentes React en una fase posterior.
+# Arquitectura de información
 
-### Formularios Netlify
-- **Voluntariado**: `<form name="voluntariado" method="POST" data-netlify="true">`
-- **Aliados**: `<form name="aliados" method="POST" data-netlify="true">`
-- Ambos incluyen `form-name` y `netlify-honeypot`.
+La estructura del sitio se organizó para facilitar el acceso a la información clave:
 
-## Siguiente iteración recomendada
-1. Integrar fotografías reales y testimonios validados por Casa Isis.
-2. Añadir página de detalle por programa.
-3. Incorporar microinteracciones y estados de éxito/error para formularios.
-4. Hacer auditoría Lighthouse y correcciones AA completas.
+- **Inicio (`index.html`)**  
+  Presentación de la organización, impacto social y llamadas a la acción.
+
+- **Nosotros (`nosotros.html`)**  
+  Información institucional: misión, visión y principios.
+
+- **Programas (`programas.html`)**  
+  Descripción de los programas y líneas de apoyo.
+
+- **Voluntariado (`voluntariado.html`)**  
+  Información para personas interesadas en participar como voluntarios.
+
+- **Aliados (`aliados.html`)**  
+  Opciones de colaboración para empresas o instituciones.
+
+- **Contacto (`contacto.html`)**  
+  Canales de comunicación directa.
+
+---
+
+# Dirección visual
+
+La propuesta visual respeta los **colores institucionales originales de Casa Isis**, ya que la organización solicitó conservar su identidad gráfica.
+
+### Paleta de colores
+
+| Color | Uso |
+|------|------|
+| `#6F2DBD` | Color primario |
+| `#4B1D82` | Primario oscuro |
+| `#F4B400` | Color secundario |
+| `#00A6A6` | Color de acento |
+| `#FDF9FF` | Fondo |
+| `#1F1B2D` | Texto principal |
+
+Estos colores se utilizaron para mantener **coherencia con la identidad existente**, mientras se mejora la jerarquía visual y la legibilidad.
+
+---
+
+# Tecnologías utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- Bootstrap  
+- Netlify Forms  
+
